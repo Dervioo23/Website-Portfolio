@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dervio Rahmatdianto - Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Dervio</div>
+      <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="glitch">Hallo, Saya <span class="highlight gradient-text">Dervio Rahmatdianto!</span></h1>
+        <h2 class="shine">Data Scientist</h2>
+        <p>Seorang mahasiswa Sains Data Universitas PGRI Sumatera Barat yang bersemangat dalam analisis data, machine learning, dan pengembangan teknologi AI.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary hover-3d">Lihat Karya Saya</a>
+          <a href="#contact" class="btn secondary hover-3d">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-img tilt">
+          <img src="Fotodervio.png" alt="Dervio Rahmatdianto" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-header" data-text="ABOUT">
+        <h2>Kenali Saya Lebih Dekat</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Halo! Saya Dervio Rahmatdianto, seorang mahasiswa Sains Data yang bersemangat dalam analisis data, machine learning, dan pengembangan teknologi AI. Saya memiliki pengalaman dalam pengelolaan data, pembuatan model prediksi, dan
+            pengembangan web.
+          </p>
+          <p>
+            Saya saat ini menempuh pendidikan di Universitas PGRI Sumatera Barat, semester lima, dengan fokus utama di bidang Data Science. Saya juga mengikuti program Bangkit 2025 dalam alur Machine Learning untuk meningkatkan keterampilan
+            saya di bidang kecerdasan buatan.
+          </p>
+          <a href="/CV/CV.pdf" class="btn secondary neon-glow" download="Dervio_Rahmatdianto_CV.pdf">Download CV</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item hover-3d">
+            <span class="stat-number gradient-text">BEM KM</span>
+            <span class="stat-text">Menteri Informasi dan Komunikasi BEM KM 2024/2025</span>
+          </div>
+          <div class="stat-item hover-3d">
+            <span class="stat-number gradient-text">Mahasiswa</span>
+            <span class="stat-text">Sains Data Universitas PGRI Sumatera Barat</span>
+          </div>
+          <div class="stat-item hover-3d">
+            <span class="stat-number gradient-text">Himpunan Mahasiswa</span>
+            <span class="stat-text">Ketua Himpunan Mahasiswa Sains Data 2023/2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header" data-text="PROJECTS">
+        <h2>Proyek & Sertifikat</h2>
+        <div class="underline"></div>
+      </div>
+
+      <!-- Project/Certificate Tabs -->
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-btn active" data-target="projects-tab">Proyek</button>
+          <button class="tab-btn" data-target="certificates-tab">Sertifikat</button>
+        </div>
+      </div>
+
+      <!-- Projects Tab Content -->
+      <div class="tab-content active" id="projects-tab">
+        <div class="projects-grid">
+          <div class="project-card ripple">
+            <div class="project-img project-img-1"></div>
+            <h3>Prediksi Harga Bitcoin</h3>
+            <p>Sistem prediksi harga Bitcoin menggunakan model hybrid CNN-LSTM dengan data real-time.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>CNN-LSTM</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn small hover-3d">Demo</a>
+              <a href="files/prediksi_bitcoin.zip" class="btn small secondary hover-3d" download="Prediksi_Bitcoin.zip">Source Code</a>
+            </div>
+          </div>
+
+          <div class="project-card ripple">
+            <div class="project-img project-img-2"></div>
+            <h3>Analisis Sentimen Media Sosial</h3>
+            <p>Aplikasi analisis sentimen untuk media sosial menggunakan NLP dan machine learning.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>NLTK</span>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn small hover-3d">Demo</a>
+              <a href="files/analisis_sentimen.zip" class="btn small secondary hover-3d" download="Analisis_Sentimen.zip">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="center-btn">
+          <a href="#" class="btn primary neon-glow">Lihat Semua Proyek</a>
+        </div>
+      </div>
+
+      <!-- Certificates Tab Content -->
+      <div class="tab-content" id="certificates-tab">
+        <div class="certificates-grid">
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-1"></div>
+            <h3>Machine Learning Specialization</h3>
+            <p>Sertifikasi dari DeepLearning.AI dan Stanford University di bidang Machine Learning.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Maret 2024</span>
+              <span><i class="fas fa-award"></i> Coursera</span>
+            </div>
+            <div class="certificate-links">
+              <a href="files/machine_learning_specialization.pdf" class="btn small hover-3d" download="Machine_Learning_Specialization.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-2"></div>
+            <h3>Data Science Professional</h3>
+            <p>Sertifikasi profesional di bidang Data Science dan Analisis Data.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Januari 2024</span>
+              <span><i class="fas fa-award"></i> IBM</span>
+            </div>
+            <div class="certificate-links">
+              <a href="files/data_science_professional.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+        </div>
+        <div class="center-btn">
+          <a href="#" class="btn primary neon-glow">Lihat Semua Sertifikat</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header" data-text="SKILLS">
+        <h2>Keahlian Saya</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="gradient-text">Data Science</h3>
+          <div class="skills-grid">
+            <div class="skill-item tilt">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-table"></i>
+              <span>Pandas</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-calculator"></i>
+              <span>NumPy</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-chart-bar"></i>
+              <span>Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="gradient-text">Machine Learning</h3>
+          <div class="skills-grid">
+            <div class="skill-item tilt">
+              <i class="fas fa-brain"></i>
+              <span>TensorFlow</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-network-wired"></i>
+              <span>CNN-LSTM</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-robot"></i>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fas fa-project-diagram"></i>
+              <span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="gradient-text">Web & Cloud</h3>
+          <div class="skills-grid">
+            <div class="skill-item tilt">
+              <i class="fab fa-html5"></i>
+              <span>HTML/CSS</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fab fa-google"></i>
+              <span>Google Cloud</span>
+            </div>
+            <div class="skill-item tilt">
+              <i class="fab fa-aws"></i>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header" data-text="CONTACT">
+        <h2>Hubungi Saya</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="gradient-text">Mari Terhubung</h3>
+          <p>Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya.</p>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>derviord23gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+62 821 6904 6446</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Padang, Sumatera Barat, Indonesia</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Dervioo23" class="social-link hover-3d" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dervio-rahmatdianto-703bb4153" class="social-link hover-3d" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/dervioo_" class="social-link hover-3d" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@derviorahmatdianto1384" class="social-link hover-3d" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@dervioo" class="social-link hover-3d" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary neon-glow">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Dervio Rahmatdianto. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
