@@ -3,7 +3,7 @@
   <head>
     <title>Dervio Rahmatdianto - Portfolio</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -18,7 +18,61 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <button class="mobile-nav-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="mobile-nav-links">
+        <a href="/" aria-current="page"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-bottom-nav">
+      <div class="mobile-bottom-nav-links">
+        <a href="/" class="mobile-bottom-nav-link active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="mobile-bottom-nav-link">
+          <i class="fas fa-user"></i>
+          <span>About</span>
+        </a>
+        <a href="#projects" class="mobile-bottom-nav-link">
+          <i class="fas fa-code"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#skills" class="mobile-bottom-nav-link">
+          <i class="fas fa-cogs"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#contact" class="mobile-bottom-nav-link">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <a href="#" class="floating-action-btn">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Pull to refresh indicator -->
+    <div class="pull-to-refresh">
+      <i class="fas fa-sync-alt"></i>
+    </div>
 
     <section id="hero">
       <div class="hero-content">
@@ -31,9 +85,14 @@
         </div>
       </div>
       <div class="hero-image">
-        <div class="profile-img tilt">
-          <img src="Fotodervio.png" alt="Dervio Rahmatdianto" />
+        <div class="profile-img">
+          <img src="gambar/IMG-20230908-WA0113.jpg" alt="Dervio Rahmatdianto" />
+          <!-- Removed cyber lines overlay -->
         </div>
+      </div>
+      <div class="swipe-indicator">
+        <i class="fas fa-chevron-down"></i>
+        <span>Swipe down to explore</span>
       </div>
     </section>
 
@@ -98,8 +157,7 @@
               <span>CNN-LSTM</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn small hover-3d">Demo</a>
-              <a href="files/prediksi_bitcoin.zip" class="btn small secondary hover-3d" download="Prediksi_Bitcoin.zip">Source Code</a>
+              <a href="https://github.com/Dervioo23/PrediksiBitcoin" class="btn small secondary hover-3d" target="_blank">Source Code</a>
             </div>
           </div>
 
@@ -113,8 +171,21 @@
               <span>Scikit-learn</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn small hover-3d">Demo</a>
               <a href="files/analisis_sentimen.zip" class="btn small secondary hover-3d" download="Analisis_Sentimen.zip">Source Code</a>
+            </div>
+          </div>
+
+          <div class="project-card ripple">
+            <div class="project-img project-img-3"></div>
+            <h3>Dashboard Visualisasi Data COVID-19</h3>
+            <p>Dashboard interaktif untuk visualisasi dan analisis data COVID-19 di Indonesia.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Dash</span>
+              <span>Plotly</span>
+            </div>
+            <div class="project-links">
+              <a href="files/dashboard_covid.zip" class="btn small secondary hover-3d" download="Dashboard_COVID.zip">Source Code</a>
             </div>
           </div>
         </div>
@@ -128,27 +199,136 @@
         <div class="certificates-grid">
           <div class="certificate-card ripple">
             <div class="certificate-img certificate-img-1"></div>
-            <h3>Machine Learning Specialization</h3>
-            <p>Sertifikasi dari DeepLearning.AI dan Stanford University di bidang Machine Learning.</p>
+            <h3>Belajar Visualisasi Data</h3>
+            <p>Sertifikasi yang ditujukan untuk pemula yang ingin berkarier di pengolahan data</p>
             <div class="certificate-meta">
-              <span><i class="fas fa-calendar-alt"></i> Maret 2024</span>
-              <span><i class="fas fa-award"></i> Coursera</span>
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dicoding</span>
             </div>
             <div class="certificate-links">
-              <a href="files/machine_learning_specialization.pdf" class="btn small hover-3d" download="Machine_Learning_Specialization.pdf">Lihat Sertifikat</a>
+              <a href="Sertifikat/(Dicoding)sertifikat_course_177_3798113_100225221425.pdf" class="btn small hover-3d" download="Visualisasi_Data_Specialization.pdf">Lihat Sertifikat</a>
             </div>
           </div>
 
           <div class="certificate-card ripple">
             <div class="certificate-img certificate-img-2"></div>
-            <h3>Data Science Professional</h3>
-            <p>Sertifikasi profesional di bidang Data Science dan Analisis Data.</p>
+            <h3>Belajar Dasar Data Science</h3>
+            <p>Sertifikasi Belajar Dasar Data Science untuk memahami dasar-dasar data science dan penerapannya.</p>
             <div class="certificate-meta">
-              <span><i class="fas fa-calendar-alt"></i> Januari 2024</span>
-              <span><i class="fas fa-award"></i> IBM</span>
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dicoding</span>
             </div>
             <div class="certificate-links">
-              <a href="files/data_science_professional.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+              <a href="Sertifikat/(Dicoding)sertifikat_course_615_3798113_100225204537.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-3"></div>
+            <h3>Memulai Pemrograman dengan Python</h3>
+            <p>Sertifikasi Memulai Pemrograman dengan Python untuk yang ingin mempelajari dasar pemrograman Python sesuai standar industri.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dicoding</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/(Dicoding)sertifikat_course_86_3798113_110225150007.pdf" class="btn small hover-3d" download="TensorFlow_Developer.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-4"></div>
+            <h3>Create Machine Learning Models</h3>
+            <p>Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan kursus atau pelatihan pembuatan model machine learning di Microsoft Learn.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Januari 2025</span>
+              <span><i class="fas fa-award"></i> Microsoft</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/Achievements - derviorahmatdianto-6815 _ Microsoft Learn.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-5"></div>
+            <h3>Get Started with Microsoft Data Analytics</h3>
+            <p>Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan kursus atau pelatihan dasar tentang analisis data menggunakan teknologi Microsoft.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Januari 2025</span>
+              <span><i class="fas fa-award"></i> Microsoft</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/Achievements - derviorahmatdianto-6816 _ Microsoft Learn.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-6"></div>
+            <h3>Design a Machine Learning Solution</h3>
+            <p>Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan kursus atau pelatihan tentang perancangan solusi berbasis machine learning di Microsoft Learn.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Microsoft</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/(Dicoding)sertifikat_course_615_3798113_100225204537.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-7"></div>
+            <h3>Project Machine Learning with Python: Building Recommender System with Similarity Function</h3>
+            <p>
+              Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan proyek machine learning dengan Python, khususnya dalam membangun sistem rekomendasi menggunakan fungsi kesamaan (similarity function) di DQLab.
+            </p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dqlab</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/certificate-DQLABPRJC6UPWCES.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-8"></div>
+            <h3>Data Science Project: Analisis Data COVID-19 di Dunia & ASEAN</h3>
+            <p>Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan proyek data science yang berfokus pada analisis data COVID-19 secara global dan di kawasan ASEAN melalui platform DQLab.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dqlab</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/certificate-DQLABINTP1EDISWA.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-9"></div>
+            <h3>Project Data Analysis for Finance: Proses Investasi Investor</h3>
+            <p>Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan proyek analisis data di bidang keuangan, khususnya dalam memahami proses investasi investor, melalui platform DQLab.</p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dqlab</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/certificate-DQLABPRJC9JJGUPO.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
+            </div>
+          </div>
+
+          <div class="certificate-card ripple">
+            <div class="certificate-img certificate-img-10"></div>
+            <h3>Data Science in Retail: Market Basket Analysis</h3>
+            <p>
+              Sertifikat ini diberikan sebagai pengakuan atas keberhasilan dalam menyelesaikan proyek data science di bidang ritel, khususnya dalam melakukan Market Basket Analysis untuk memahami pola pembelian pelanggan, melalui platform
+              DQLab.
+            </p>
+            <div class="certificate-meta">
+              <span><i class="fas fa-calendar-alt"></i> Februari 2025</span>
+              <span><i class="fas fa-award"></i> Dqlab</span>
+            </div>
+            <div class="certificate-links">
+              <a href="Sertifikat/certificate-DQLABMLMBASNOGBT.pdf" class="btn small hover-3d" download="Data_Science_Professional.pdf">Lihat Sertifikat</a>
             </div>
           </div>
         </div>
@@ -168,8 +348,8 @@
           <h3 class="gradient-text">Data Science</h3>
           <div class="skills-grid">
             <div class="skill-item tilt">
-              <i class="fab fa-python"></i>
-              <span>Python</span>
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <span>Analisis Data</span>
             </div>
             <div class="skill-item tilt">
               <i class="fas fa-table"></i>
@@ -194,7 +374,7 @@
             </div>
             <div class="skill-item tilt">
               <i class="fas fa-network-wired"></i>
-              <span>CNN-LSTM</span>
+              <span>Supervised Learning</span>
             </div>
             <div class="skill-item tilt">
               <i class="fas fa-robot"></i>
@@ -207,23 +387,15 @@
           </div>
         </div>
         <div class="skill-category">
-          <h3 class="gradient-text">Web & Cloud</h3>
+          <h3 class="gradient-text">Bahasa Pemrograman</h3>
           <div class="skills-grid">
             <div class="skill-item tilt">
-              <i class="fab fa-html5"></i>
-              <span>HTML/CSS</span>
+              <i class="fab fa-python"></i>
+              <span>Python</span>
             </div>
             <div class="skill-item tilt">
-              <i class="fab fa-js"></i>
-              <span>JavaScript</span>
-            </div>
-            <div class="skill-item tilt">
-              <i class="fab fa-google"></i>
-              <span>Google Cloud</span>
-            </div>
-            <div class="skill-item tilt">
-              <i class="fab fa-aws"></i>
-              <span>AWS</span>
+              <i class="fab fa-r-project"></i>
+              <span>R</span>
             </div>
           </div>
         </div>
@@ -260,7 +432,7 @@
           </div>
         </div>
         <div class="contact-form">
-          <form id="contactForm">
+          <form id="contactForm" name="Porfolio-contact-form">
             <div class="form-group">
               <label for="name">Nama</label>
               <input type="text" id="name" name="name" required />
@@ -295,5 +467,16 @@
         </div>
       </div>
     </footer>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzj4Ptx-_dp7rJAJJfPv7Kmxfgk6DKIDogvH4IiBdJRa29LDWDCOerWWpOJOIxI7-t8wA/exec';
+      const form = document.forms['Porfolio-contact-form'];
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => console.log('Success!', response))
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
   </body>
 </html>
